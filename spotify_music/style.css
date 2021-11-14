@@ -18,7 +18,7 @@ nav ul{
     display: flex;
     align-items: center;
     list-style: none;
-    height: 65px;
+    height: 50px;
     background-color: black;
     color: white;
 }
@@ -32,5 +32,53 @@ nav ul{
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
+    
+
+}
+.container{
+    min-height: 64vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round','sans-serif';
+    display: flex;
+    margin: 21px auto;
+    width: 70%;
+    border-radius: 12px;
+    /* align-items: center; */
+    padding: 27px;
+    background-image: url(bg.jpg);
+}
+.bottom{
+    position: sticky;
+    height: 91px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 12px 0; */
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw ;
+}
+.songItem {
+    display: flex;
+    height: 50px;
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
 
 }
