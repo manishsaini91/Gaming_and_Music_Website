@@ -53,7 +53,7 @@ nav ul li{
 .bottom{
     position: sticky;
     bottom: 0;
-    height: 130px;
+    height: 100px;
     background-color: black;
     color: white;
     display: flex;
@@ -63,7 +63,7 @@ nav ul li{
 }
 
 .icons{
-    margin-top: 14px; 
+    margin-top: 11px; 
 }
 .icons i{
     cursor: pointer;
@@ -79,7 +79,7 @@ nav ul li{
 }
 
 .songItem{
-    height: 50px;
+    height: 46px;
     display: flex;
     background-color: white;
     
