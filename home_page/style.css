@@ -6,45 +6,66 @@
 .backImage{
  z-index: -1;
  width: 100%;
- height: 100%;
+ height: 90%;
+}
+.logo{
+  height: 30px;
+  width: 30px;
+ padding: 13px;
+ margin-left: 130px;
 }
 .name{
-  padding: 5px;
-  color: white;
-  margin-left: 200px;
-  font-size: 20px;
-  margin-right: 300px;
+  /* padding-top: 40px; */
+  /* color: white; */
+  /* margin-left: 100px; */
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+
+  /* margin-right: 600px; */
 }
 .header {
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  display: flex;
+  height: 60px;
+  /* position: absolute;
+  top: 0rem; */
+}
+.list{
+  text-align: center;
   display: flex;
   position: absolute;
-  top: 0rem;
+  right: 100px;
 }
-.header li{
-  color: white;
+
+.list li{
+  /* color: white;
   font-size: 15px;
   list-style: none;
   padding-top: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 8px; */
+  list-style: none;
+  line-height: 60px;
   margin-left: 30px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.header li:hover{
-   border-bottom: 2px solid #2372BF;
+.list:hover{
+   border-bottom: 2px solid #2372BF; 
    cursor: pointer;
+   color: red;
 }
 .boxDiv{
   display:flex;
   position: absolute;
   top: 0;
-  margin-left: 40px;
+  margin-left: 50px;
   padding: 100px;
 }
 .box1{
    height: 200px;
    width: 200px;
    background-color: red;
-  
    justify-content: center;
    text-align: center;
    line-height: 200px;
@@ -54,7 +75,7 @@
    margin: 30px;
    top: 0rem;
    z-index: 1;
-   margin-top: 100px;
+   margin-top: 130px;
    opacity: .8;
    border-radius: 10px;
    box-shadow: 2px 3px 5px #fd3131;
@@ -73,7 +94,7 @@
    top: 0rem;
    z-index: 1;
    margin: 30px;
-   margin-top: 100px;
+   margin-top: 130px;
    opacity: .8;
    border-radius: 10px;
    box-shadow: 2px 3px 5px #3156fd;
@@ -92,7 +113,7 @@
    margin: 30px;
    top: 0rem;
    z-index: 1;
-   margin-top: 100px;
+   margin-top: 130px;
    border-radius: 10px;
    opacity: .8;
    box-shadow: 2px 3px 5px #fd3131;
@@ -111,7 +132,7 @@
    top: 0rem;
    z-index: 1;
    margin: 30px;
-   margin-top: 100px;
+   margin-top: 130px;
    border-radius: 10px;
    opacity: .8;
    box-shadow: 2px 3px 5px #3156fd;
