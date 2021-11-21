@@ -31,6 +31,7 @@ a{
   /* justify-content: space-around; */
   display: flex;
   height: 60px;
+  background-color: white;
   /* position: absolute;
   top: 0rem; */
 }
@@ -177,4 +178,176 @@ a{
   transition: .8s;
   line-height: 220px;
   font-size: 22px;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: black;
+  height: 100%;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1em;
+}
+.about {
+  display: block;
+  width: 400px;
+  margin: 10px;
+}
+.about h3 {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #fff;
+  font-size: 1.3em;
+}
+.about p{
+  letter-spacing: .1em;
+  margin-top: 5px;
+}
+
+.categories {
+  display: block;
+  margin: 10px;
+}
+
+.categories h3 {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.categories li {
+  margin: 10px 0 0 5px;
+}
+
+.quick-link {
+  display: block;
+  margin: 10px;
+}
+
+.quick-link h3 {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.quick-link li {
+  margin: 10px 0 0 5px;
+}
+
+.contact {
+  margin: 10px;
+}
+
+.contact h3 {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.contact li {
+  margin: 10px 0 0 5px;
+}
+
+.register {
+  margin: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.register span {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.register a {
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.register a:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: rgb(27, 233, 27);
+}
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.icons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.icons a {
+  margin-right: 20px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  padding: 10px 14px;
+}
+
+.icons a:nth-child(1) {
+  background-color: #4267b2;
+  color: #fff;
+  padding: 10px 17px;
+}
+
+.icons a:nth-child(2) {
+  background-color: purple;
+  color: #fff;
+}
+
+.icons a:nth-child(3) {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.icons a:nth-child(4) {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 118, 118);
+  height: 50px;
+  width: 100%;
+  color: black;
+  margin-top: 3.5%;
+  font-weight:800;
+  font-family: roboto;
 }
