@@ -6,7 +6,7 @@
 
 .body{
     background: url("../img/bg.jpg"); 
-    min-height: 100vh;
+    height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
@@ -14,19 +14,42 @@
     align-items: center;
 }
 
+.board-container
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 70%;
+    height: 100vh;
+
+}
+
+.score-card
+{
+    /* border: 2px solid blue; */
+    display: inline-flex;
+    height: 100vh;
+    width: 30%;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
 #scoreBox{
-    position: absolute;
-    top: 9px;
-    right: 200px;
+    /* position: absolute; */
+    /* top: 9px;
+    right: 200px; */
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
+    margin-top: 10px;
 }
 
 #hiscoreBox{
-    position: absolute;
-    top: 59px;
-    right: 140px;
+    /* position: absolute; */
+    /* top: 59px; */
+    /* right: 140px; */
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
@@ -34,12 +57,15 @@
 
 #board{
     background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
-    width: 90vmin;
-    height: 92vmin;
+    /* width: 600px; */
+    width: 90vh;
+    height: 95vh;
     border: 2px solid black;
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
+    float: right;
+    margin-top: 20px;
 }
 
 .head{
@@ -59,4 +85,12 @@
     background: linear-gradient(red, purple);
     border: .25vmin solid black;
     border-radius: 8px;
+}
+
+@media (max-width: 879px) 
+{
+    #board
+    {
+        width: 95%;
+    }
 }
