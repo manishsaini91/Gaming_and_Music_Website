@@ -60,12 +60,14 @@
     /* width: 600px; */
     width: 90vh;
     height: 95vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
     float: right;
     margin-top: 20px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px lightgreen;
 }
 
 .head{
