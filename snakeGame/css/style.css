@@ -4,13 +4,23 @@
 }
 
 .body{
-    background: url("../img/bg.jpg"); 
+    background: url("https://i.pinimg.com/originals/c3/d5/db/c3d5dbded62a3351feecab12d0ce397c.jpg"); 
     height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inner-score-card
+{
+    z-index: 2;
+    background-color: rgb(147, 214, 81, 0.4);
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px gold;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .board-container
@@ -52,6 +62,7 @@
     font-size: 39px;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 0 0.1em gold;
 }
 
 #board{
@@ -65,8 +76,8 @@
     grid-template-columns: repeat(18, 1fr);
     float: right;
     margin-top: 20px;
-    z-index: 1;
-    box-shadow: 0px 0px 10px lightgreen;
+    z-index: 2;
+    box-shadow: 0px 0px 15px lightgreen;
 }
 
 .head{
@@ -88,7 +99,7 @@
     border-radius: 8px;
 }
 
-@media (max-width: 700px) 
+@media (max-width: 719px) 
 {
     #board
     {
@@ -96,13 +107,13 @@
         /* height: 73vw; */
     }
 
-    /* #hiscoreBox{
-        font-size: 20px;
+    #hiscoreBox{
+        font-size: 25px;
     }
 
     #scoreBox{
-        font-size: 20px;
-    } */
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 620px)
@@ -127,7 +138,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         height: 90vw;
     }
 
