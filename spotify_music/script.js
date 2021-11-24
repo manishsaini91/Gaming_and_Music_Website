@@ -1,5 +1,8 @@
 console.log("Welcome to Spotify");
 
+
+
+
 // Initialize the Variables
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
@@ -23,7 +26,15 @@ let songs = [
     {songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/11.mp3", coverPath: "covers/11.jpg"},
     {songName: "Meri Zindagi Hai Tu", filePath: "songs/12.mp3", coverPath: "covers/12.jpg"},
     {songName: "Baarish", filePath: "songs/13.mp3", coverPath: "covers/13.jpg"},
-    {songName: "Mera Yaraa", filePath: "songs/14.mp3", coverPath: "covers/14.jpg"}
+    {songName: "Mera Yaraa", filePath: "songs/14.mp3", coverPath: "covers/14.jpg"},
+    {songName: "Tumbe Te Zumba", filePath: "songs/15.mp3", coverPath: "covers/15.jpg"},
+    {songName: "Kalle Kalle", filePath: "songs/16.mp3", coverPath: "covers/16.jpg"},
+    {songName: "Jugnu", filePath: "songs/17.mp3", coverPath: "covers/17.jpg"},
+    {songName: "Pathher Wargi", filePath: "songs/18.mp3", coverPath: "covers/18.jpg"},
+    {songName: "Majnu", filePath: "songs/19.mp3", coverPath: "covers/19.jpg"},
+    {songName: " Thoda Thoda Pyaar - Stebin Ben", filePath: "songs/20.mp3", coverPath: "covers/20.jpg"},
+    {songName: " Main Janu Na - Jonita Gandhi", filePath: "songs/21.mp3", coverPath: "covers/21.jpg"}
+
 
 ]
 
