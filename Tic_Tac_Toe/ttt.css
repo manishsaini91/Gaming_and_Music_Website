@@ -12,6 +12,7 @@ body{
 nav{
     background-color: rgb(255, 136, 0);
     color: black;
+    border-bottom: 4px solid black;
     height: 65px;
     font-size: 27px;
     display: flex;
@@ -86,7 +87,7 @@ nav ul{
     border-bottom: 0;
 }
 
-#reset {
+.button {
     margin: 0 23px;
     padding: 1px 18px;
     background: #f3e7f9;
@@ -95,6 +96,13 @@ nav ul{
     font-family: 'Baloo Bhaina 2';
     font-size: 15px;
     font-weight: bolder;
+}
+.btn2{
+    margin: 0 2px;
+}
+.btn2 a{
+    text-decoration: none;
+    color: black;
 }
 
 .line{
