@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 
 .body{
-    background: url("../img/bg.jpg"); 
-    min-height: 100vh;
+    background: url("https://i.pinimg.com/originals/c3/d5/db/c3d5dbded62a3351feecab12d0ce397c.jpg"); 
+    height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
@@ -14,32 +13,71 @@
     align-items: center;
 }
 
+.inner-score-card
+{
+    z-index: 2;
+    background-color: rgb(147, 214, 81, 0.4);
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px gold;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.board-container
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 70%;
+    height: 100vh;
+
+}
+
+.score-card
+{
+    /* border: 2px solid blue; */
+    display: inline-flex;
+    height: 100vh;
+    width: 30%;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
 #scoreBox{
-    position: absolute;
-    top: 9px;
-    right: 200px;
+    /* position: absolute; */
+    /* top: 9px;
+    right: 200px; */
     font-size: 39px;
     font-weight: bold;
-    font-family: 'New Tegomin', serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
 }
 
 #hiscoreBox{
-    position: absolute;
-    top: 59px;
-    right: 140px;
+    /* position: absolute; */
+    /* top: 59px; */
+    /* right: 140px; */
     font-size: 39px;
     font-weight: bold;
-    font-family: 'New Tegomin', serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 0 0.1em gold;
 }
 
 #board{
     background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
-    width: 90vmin;
-    height: 92vmin;
-    border: 2px solid black;
+    /* width: 600px; */
+    width: 90vh;
+    height: 96vh;
+    /* border: 2px solid black; */
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
+    float: right;
+    margin-top: 20px;
+    z-index: 2;
+    box-shadow: 0px 0px 15px lightgreen;
 }
 
 .head{
@@ -60,3 +98,70 @@
     border: .25vmin solid black;
     border-radius: 8px;
 }
+
+@media (max-width: 719px) 
+{
+    #board
+    {
+        width: 95%;
+        /* height: 73vw; */
+    }
+
+    #hiscoreBox{
+        font-size: 25px;
+    }
+
+    #scoreBox{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 620px)
+{
+    .body
+    {
+        /* border: 2px solid black; */
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    #board
+    {
+        height: 95%;
+        margin-top: 0px;
+
+    }
+
+    .board-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid black; */
+        height: 90vw;
+    }
+
+    .score-card
+    {
+        height: 25vh;
+        width: 70%;
+        justify-content: flex-end;
+    }
+
+    #hiscoreBox{
+        font-size: 25px;
+    }
+
+    #scoreBox{
+        font-size: 25px;
+    }
+}
+
+/* @media (max-width: 500px) 
+{
+    .board-container
+    {
+        height: ;
+    }
+} */
