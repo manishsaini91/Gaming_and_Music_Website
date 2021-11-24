@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    // location.replace(".../index.html");
+    location.replace("/home_page/home.html");
     var uid = user.uid;
   } else {
 
@@ -39,7 +39,7 @@ function checkInput() {
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
-        location.replace(".../index.html");
+        location.replace("/home_page/home.html");
         // ...
       })
       .catch((error) => {
