@@ -106,3 +106,15 @@ body {
     visibility: visible;
     color: red;
 }
+
+.newUser{
+    color: blue;
+    font-size: 12px;
+    float: right;
+    margin: 20px;
+    text-decoration: underline;
+}
+.newUser:hover{
+    cursor: pointer;
+    text-decoration: none;
+}

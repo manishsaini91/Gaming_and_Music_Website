@@ -8,11 +8,12 @@ let isgameover = false;
 // Function to change the turn
 const changeTurn = ()=>{
     return turn === "X"? "0": "X"
-}
 
+}
+music.play()
 // Function to check for a win
-const checkWin = ()=>{
-    let boxtext = document.getElementsByClassName('boxtext');
+function checkWin() {
+    let boxtext = document.getElementsByClassName('boxtext')
     let wins = [
         [0, 1, 2, 5, 5, 0],
         [3, 4, 5, 5, 15, 0],
@@ -23,19 +24,20 @@ const checkWin = ()=>{
         [0, 4, 8, 5, 15, 45],
         [2, 4, 6, 5, 15, 135],
     ]
-    wins.forEach(e =>{
-        if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
+    wins.forEach(e => {
+        if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "")) {
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
+            gameover.play()
             isgameover = true
-            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "400px";
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "400px"
             document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`
-            document.querySelector(".line").style.width = "20vw";
+            document.querySelector(".line").style.width = "20vw"
         }
     })
 }
 
 // Game Logic
-// music.play()
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
@@ -43,7 +45,7 @@ Array.from(boxes).forEach(element =>{
         if(boxtext.innerText === ''){
             boxtext.innerText = turn;
             turn = changeTurn();
-            // audioTurn.play();
+            audioTurn.play();
             checkWin();
             if (!isgameover){
                 document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
