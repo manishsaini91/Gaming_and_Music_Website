@@ -11,6 +11,17 @@ form.addEventListener('submit', function(e) {
     checkInput();
 });
 
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      location.replace("/home_page/home.html");
+      var uid = user.uid;
+      
+    } else {
+      // User is signed out
+      // ...
+    }
+  });
+
 //Functions
 
 function checkInput() {
@@ -45,6 +56,20 @@ function checkInput() {
     } else {
         showSuccess(password2);
     }
+    firebase.auth().createUserWithEmailAndPassword(emailValue, password1Value)
+  .then((userCredential) => {
+    // Signed in 
+    var user = userCredential.user;
+    window.alert("check");
+    location.replace("/home_page/home.html");
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert("error");
+    // ..
+  });
 }
 
 function showError(input, msg) {
