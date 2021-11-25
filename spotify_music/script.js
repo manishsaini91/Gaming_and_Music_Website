@@ -33,7 +33,21 @@ let songs = [
     {songName: "Pathher Wargi", filePath: "songs/18.mp3", coverPath: "covers/18.jpg"},
     {songName: "Majnu", filePath: "songs/19.mp3", coverPath: "covers/19.jpg"},
     {songName: " Thoda Thoda Pyaar - Stebin Ben", filePath: "songs/20.mp3", coverPath: "covers/20.jpg"},
-    {songName: " Main Janu Na - Jonita Gandhi", filePath: "songs/21.mp3", coverPath: "covers/21.jpg"}
+    {songName: " Main Janu Na - Jonita Gandhi", filePath: "songs/21.mp3", coverPath: "covers/21.jpg"},
+    {songName: "Dil Diyan Gallan - Tiger Zinda Hai", filePath: "songs/22.mp3", coverPath: "covers/22.jpg"},
+    {songName: "Swag Se Swagat - Tiger Zinda Hai", filePath: "songs/23.mp3", coverPath: "covers/23.jpg"},
+    {songName: "Daata Tu", filePath: "songs/24.mp3", coverPath: "covers/24.jpg"},
+    {songName: "Qatal- Manavgeet Gill", filePath: "songs/25.mp3", coverPath: "covers/25.jpg"},
+    {songName: "Khushi Jab Bhi Teri ", filePath: "songs/26.mp3", coverPath: "covers/26.jpg"},
+    {songName: "Apsraa", filePath: "songs/27.mp3", coverPath: "covers/27.jpg"},
+    {songName: "Dil Galti Kar Baitha Hai", filePath: "songs/28.mp3", coverPath: "covers/28.jpg"},
+    {songName: "Teri Meri Ikk Jindri", filePath: "songs/29.mp3", coverPath: "covers/29.jpg"},
+    {songName: "Mere Yaaraa", filePath: "songs/30.mp3", coverPath: "covers/30.jpg"},
+    {songName: "Jan Gan Man", filePath: "songs/31.mp3", coverPath: "covers/31.jpg"},
+    {songName: "Qismat 2 - Mere Yaara Ve", filePath: "songs/32.mp3", coverPath: "covers/32.jpg"},
+    {songName: "Dhoom Tara", filePath: "songs/33.mp3", coverPath: "covers/33.jpg"},
+    {songName: "Saawariya ", filePath: "songs/34.mp3", coverPath: "covers/34.jpg"}
+    
 
 
 ]
@@ -94,7 +108,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=20){
+    if(songIndex>=33){
         songIndex = 0
     }
     else{
