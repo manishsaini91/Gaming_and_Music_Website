@@ -5,14 +5,18 @@
 }
 
 body {
-    background-color: #ffe2a2;
-    font-family: 'Open Sans', sans-serif;
+    
+    background: url("https://mcdn.wallpapersafari.com/medium/5/18/8eqCRr.png"); 
     height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+a{
+    text-decoration: none;
+}
 .container {
     background-color: #fff;
     width: 400px;
@@ -69,8 +73,8 @@ body {
 .form button {
     display: block;
     width: 100%;
-    background-color: rgb(242, 255, 53);
-    color: black;
+    background-color: rgb(97, 97, 96);
+    color: white;
     padding: 10px;
     outline: none;
     border: none;
