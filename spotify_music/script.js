@@ -108,7 +108,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=20){
+    if(songIndex>=33){
         songIndex = 0
     }
     else{
