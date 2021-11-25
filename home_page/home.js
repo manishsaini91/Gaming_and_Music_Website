@@ -19,7 +19,7 @@ logIcon.onclick = function() {
             // An error happened.
           });
     } else {
-        window.open("../Auth/signin_page/signin.html");
+        window.open("../Auth/signin_page/signin.html", "_self");
     }
 };
 
