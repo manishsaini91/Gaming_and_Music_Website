@@ -35,16 +35,18 @@ function checkInput() {
     showSuccess(email);
     firebase
       .auth()
-      .signInWithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(emailValue, password1Value)
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
         location.replace("/home_page/home.html");
+
         // ...
       })
       .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
+        alert("crediantials are wrong");
       });
   }
 
