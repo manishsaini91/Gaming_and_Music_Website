@@ -274,6 +274,7 @@ font-size: 1.3em;
 .about p{
 letter-spacing: .1em;
 margin-top: 5px;
+text-align: justify;
 }
 
 .categories {

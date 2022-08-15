@@ -38,6 +38,8 @@
     display: inline-flex;
     height: 100vh;
     width: 30%;
+    margin-top: 15%;
+    margin-left: 4%;
     /* position: absolute; */
     display: flex;
     align-items: center;
@@ -68,14 +70,15 @@
 #board{
     background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
     /* width: 600px; */
-    width: 90vh;
-    height: 96vh;
+    width: 85vh;
+    height: 85vh;
     /* border: 2px solid black; */
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
-    float: right;
-    margin-top: 20px;
+    /* float: right; */
+    margin-right: 50px;
+    margin-top: 50px;
     z-index: 2;
     box-shadow: 0px 0px 15px lightgreen;
 }

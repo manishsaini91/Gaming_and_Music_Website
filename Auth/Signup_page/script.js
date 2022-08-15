@@ -66,7 +66,7 @@ function checkInput() {
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert("error");
+    window.alert("Something went Wrong! Check your details again");
     // ..
   });
 }
